@@ -46,7 +46,6 @@
     "jsdom-global": "^1.6.1",
     "mocha": "^1.21.4",
     "whatwg-fetch": "^0.11.0",
-    "webpack": "^1.12.2",
     "yuidocjs": "^0.9.0"
   },
   "scripts": {
