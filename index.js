@@ -1,6 +1,6 @@
 "use strict";
 
-var isNode = (typeof global!=="undefined") && ({}.toString.call(global)==="[object global]") && (!global.document || ({}.toString.call(global.document)!=="[object HTMLDocument]")),
+var isNode = require("itsa-utils").isNode,
     win = isNode ? global.window : window;
 
 if (win) {
@@ -8,4 +8,5 @@ if (win) {
     require("./lib/window.js")(win);
     require("./lib/document.js")(win);
     require("./lib/element.js")(win);
+    require("./lib/cookies.js")(win);
 }
